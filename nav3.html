@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Finding New Words</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="nav3.css">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <a href="#" id="sidebarClose">CLOSE <i class="glyphicon glyphicon-remove"></i></a>
+                </div>
+                <!-- navigation elements -->
+                <ul class="list-unstyled components">
+                    <li class="nav-item active">
+                        <a href="#menu" >Contact Find New Words</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu">Add a New Word</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Privacy Policy</a>
+                    </li> 
+                </ul>
+
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <!-- navbar header -->
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <!-- logo -->
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="#"><img src="Logo.png" alt=""></a></li>
+                            </ul>
+                            <!-- floted right -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="line"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+                                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                    <i class="glyphicon glyphicon-menu-hamburger"></i>
+                                </button>
+                            </ul>
+
+                         </div>
+                       
+                    </div>
+                </nav>
+                
+             <!-- section content 
+            ================================================== -->
+            <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        
+                <div class="overlay"></div>
+                <div class="shadow-overlay"></div>
+        
+                <div class="home-content">
+        
+                    <div class="row home-content__main">
+        
+                        <h1>
+                            Change, one  <br>
+                            word at a time.
+                        </h1>
+
+                        <p>{website coming soon}</p>
+                        <br>
+                        <p>Thank you for visiting Find New Words.
+                            Our website is currently under construction.
+                            For more information on the project, our workshops and 
+                            what's happening so far, please visit our social media pages.
+                        </p>
+                        <br>
+                        <p id="paragraphTwo">For any additional queries/comments, or if you'd like to host your own workshop,
+                            please contact info@findnewwords.org
+                        </p>
+        
+                    </div>
+        
+                </div> <!-- end home-content -->
+            </section> <!-- end s-home -->
+
+
+
+
+
+
+            
+            
+            </div>
+        </div>
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+               
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                    // $('.collapse.in').toggleClass('in');
+                    // $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+
+                $('#sidebarClose').on('click', function(){
+                    $('#sidebar').toggleClass('active');
+                });
+
+            });
+
+        //     $(document).ready(function () {
+               
+        //        $('#sidebarCollapse').on('click', function () {
+        //            $('#sidebar, #content').toggleClass('active');
+        //            $('.collapse.in').toggleClass('in');
+        //            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        //        });
+        //    });
+        </script>
+
+    </body>
+</html>

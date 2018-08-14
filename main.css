@@ -1,0 +1,40 @@
+.masthead {
+    min-height: 30vmin;
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #155d74;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .masthead h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+/* Mobile */
+@media (min-width: 375px) {  }
+
+ /* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {  } */
+
+/* Ipads/Tablets */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+ /* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {  } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* Large Screen */
+@media (min-width: 1366px) {  }
