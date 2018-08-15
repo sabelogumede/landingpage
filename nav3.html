@@ -19,13 +19,11 @@
     </head>
     <body>
 
-
-
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <a href="#" id="sidebarClose">CLOSE <i class="glyphicon glyphicon-remove"></i></a>
+                    <a href="#" id="sidebarClose">CLOSE <i class="fa fa-times"></i></a>
                 </div>
                 <!-- navigation elements -->
                 <ul class="list-unstyled components">
@@ -34,6 +32,12 @@
                     </li>
                     <li class="nav-item">
                         <a href="#menu">Add a New Word</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="disabled" href="#menu">New Words List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu">Social Forums</a>
                     </li>
                     <li class="nav-item">
                         <a href="#">Terms & Conditions</a>
@@ -45,33 +49,33 @@
 
             </nav>
 
-            <!-- Page Content Holder -->
-            <div id="content">
+            <nav ass="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                    
+                    <div id="navbar-container" class="container d-flex justify-content-between">
+            
+                                <!-- logo -->
+                                <a class="navbar-brand" href="#"><img src="Logo.png"></a>   
+                    
+                                <div class="collape navbar-collapse"> 
+                                        <!-- navbar-right -->
+                                        <div class="navbar-nav icons ml-auto">
+                                                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                                                <a class="line nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
 
-                <!-- navbar header -->
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
+                                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn ml-auto">
+                                            <i class="fa fa-align-justify"></i>
+                                        </button>
+                                        
+                                        </div>
+                                        
+            
+                                        
+                                </div>
+            
+                    </div> 
 
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <!-- logo -->
-                            <ul class="nav navbar-nav navbar-left">
-                                <li><a href="#"><img src="Logo.png" alt=""></a></li>
-                            </ul>
-                            <!-- floted right -->
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li class="line"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-
-                                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                                    <i class="glyphicon glyphicon-menu-hamburger"></i>
-                                </button>
-                            </ul>
-
-                         </div>
-                       
-                    </div>
-                </nav>
-                
+            </nav>
+            
              <!-- section content 
             ================================================== -->
             <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
@@ -80,38 +84,35 @@
                 <div class="shadow-overlay"></div>
         
                 <div class="home-content">
-        
-                    <div class="row home-content__main">
-        
-                        <h1>
-                            Change, one  <br>
-                            word at a time.
-                        </h1>
 
-                        <p>{website coming soon}</p>
-                        <br>
-                        <p>Thank you for visiting Find New Words.
-                            Our website is currently under construction.
-                            For more information on the project, our workshops and 
-                            what's happening so far, please visit our social media pages.
-                        </p>
-                        <br>
-                        <p id="paragraphTwo">For any additional queries/comments, or if you'd like to host your own workshop,
-                            please contact info@findnewwords.org
-                        </p>
+                
+                    <div class="row home-content__main">
+
+                        <img src="FNWGradientColon.png" alt="">
+                        
+                        <div class="side">
+                                <h1>Change, one<br>word at a time.</h1>
+
+                                <p>{website coming soon}</p>
+                                <br>
+                                <p>Thank you for visiting Find New Words.
+                                    Our website is currently under construction.
+                                    For more information on the project, our workshops and 
+                                    what's happening so far, please visit our social media pages.
+                                </p>
+                                <br>
+                                <p id="paragraphTwo">For any additional queries/comments, or if you'd like to host your own workshop,
+                                    please contact info@findnewwords.org
+                                </p>
+                        </div>
+                        
         
                     </div>
         
                 </div> <!-- end home-content -->
             </section> <!-- end s-home -->
 
-
-
-
-
-
-            
-            
+        
             </div>
         </div>
 
@@ -129,8 +130,6 @@
 
                 $('#sidebarCollapse').on('click', function () {
                     $('#sidebar').toggleClass('active');
-                    // $('.collapse.in').toggleClass('in');
-                    // $('a[aria-expanded=true]').attr('aria-expanded', 'false');
                 });
 
                 $('#sidebarClose').on('click', function(){
@@ -139,14 +138,6 @@
 
             });
 
-        //     $(document).ready(function () {
-               
-        //        $('#sidebarCollapse').on('click', function () {
-        //            $('#sidebar, #content').toggleClass('active');
-        //            $('.collapse.in').toggleClass('in');
-        //            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        //        });
-        //    });
         </script>
 
     </body>

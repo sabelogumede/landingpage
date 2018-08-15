@@ -8,7 +8,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #4B0082;
+    background: #331437;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -32,7 +37,7 @@ a, a:hover, a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: #4B0082;
+    background: #331437;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -51,11 +56,19 @@ a, a:hover, a:focus {
     background-color: transparent !important;
 } */
 
+/* social icons */
+.fab {
+    color: red !important;
+    font-size: 25px;
+}
+.fab:hover {
+    color: rgb(255, 238, 0) !important;
+}
+
 .line {
     /* width: 100%; */
     /* height: 1px; */
     border-right: 1px solid rgb(180, 9, 9);
-    
 }
 
 /* ---------------------------------------------------
@@ -173,6 +186,12 @@ a.article, a.article:hover {
     color: #fff !important;
 }
 
+a.disabled {
+    /* Make the disabled links grayish*/
+    color: gray;
+    /* And disable the pointer events */
+    pointer-events: none;
+  }
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -197,13 +216,17 @@ a.article, a.article:hover {
 /* ------------------------------------------------------------------- 
  * ## home content
  * ------------------------------------------------------------------- */
+ #home {
+    padding: 50px;
+ }
+
  .home-content {
     display: table-cell;
     width: 70%;
     height: 100%;
     vertical-align: middle;
     /* padding-bottom: 15.6rem; */
-    padding: 0 100px;
+    padding: 0 50px 0 150px;
     position: relative;
     overflow: hidden;
 }
@@ -244,32 +267,155 @@ a.article, a.article:hover {
     /* position: relative; */
 }
 
+/* color side graphic */
 
+#colorgraphic {
+    width: 90px;
+    float: left;
+    padding: 0;
+    margin-left: 60px;
+    overflow: hidden;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+img {
+    width: 8em;
+}
 
 
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+/* Mobile */
+@media (max-width: 375px) { 
+    .container-fluid {
+        padding: 0 !important;
+    }
+    .collapse {
+        display: block!important;
+        padding: 0;
+        border: 0;
+        width: 90% !important;
+        margin: 0 !important;
+        max-height: 100px !important;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-bottom: 0;
+        /* min-height: 100px; */
+        padding: 0;
+    }
+    
+    .navbar-left {
+        width: 30%;
+    }
+    .navbar-right {
+        width: 50%;
+    }
+    .navbar-collapse {
+        padding-left: 0;
+    }
+    .navbar-brand {
+        padding: 15px 0 0 15px !important;
+    }
+    /* logo */
+    .navbar-brand img {
+        width: 40px;
+        float: left;
+        padding-left: 0px !important;
+    }
+
+    .navbar-btn {
+        float: right;
+        width: 30px;
+    }
+    /* icons */
+    .icons {
+        /* padding-top: 40px; */
+        margin-top: 10px;
+        width: 30%!important;
+        height: 40px!important;
+        float: right;
+    }
+
+   
+
+
+
+    #content {
+        padding: 0;
+    }
+
+    #home {
+        padding: 0;
+        height: 100%;
+    }
+
+    .home-content__main {
+        padding-top: 1em;
+        margin: 0;
+    }
+    .home-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    #home img {
+        width: 50px;
+        float: left;
+    }
+    #home .side {
+        width: 70%;
+        float: left;
+        margin-top: 30px;
+    }
+
+    .home-content h1 {
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    .home-content p {
+        font-size: 0.7em;
+        width: 85%;
+    }
+
+    
+
+
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {  } */
+
+/* Ipads/Tablets */
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) {  } */
 @media (max-width: 768px) {
+
+    .collapse {
+        display: inline-block!important;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        margin: 0!important;
+    }
+
+    .navbar {
+        width: 100%;
+        /* margin-top: 10px; */
+        margin-bottom: 0;
+        /* min-height: 100px; */
+        padding: 0;
+    }
+
+
+
+
+
+
+
     #sidebar {
         margin-right: -250px;
     }
@@ -286,4 +432,17 @@ a.article, a.article:hover {
         display: none;
     }
 }
+
+ /* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {  } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* Large Screen */
+@media (min-width: 1366px) {  }
+
+
+
+
 
